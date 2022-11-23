@@ -12,7 +12,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/ch10_notification" />
-            <option value="$PROJECT_DIR$/ch10_notification2" />
             <option value="$PROJECT_DIR$/ch11_jetpack" />
             <option value="$PROJECT_DIR$/ch12_material" />
             <option value="$PROJECT_DIR$/ch13_activity" />
@@ -26,13 +25,9 @@
             <option value="$PROJECT_DIR$/ch20_firebase" />
             <option value="$PROJECT_DIR$/ch6_view" />
             <option value="$PROJECT_DIR$/ch7_layout" />
-            <option value="$PROJECT_DIR$/ch7_view" />
             <option value="$PROJECT_DIR$/ch8_event" />
-            <option value="$PROJECT_DIR$/ch8_event2" />
             <option value="$PROJECT_DIR$/ch9_resource" />
-            <option value="$PROJECT_DIR$/ch9_resource2" />
-            <option value="$PROJECT_DIR$/demo" />
-            <option value="$PROJECT_DIR$/gmsystem" />
+            <option value="$PROJECT_DIR$/sharedpreference" />
           </set>
         </option>
       </GradleProjectSettings>

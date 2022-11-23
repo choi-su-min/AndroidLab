@@ -1,27 +1,37 @@
 package com.example.demo
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.demo.databinding.ActivityMainBinding
 import com.google.gson.Gson
 import java.io.IOException
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
-
+    lateinit var binding:ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val testdata = getJsonData("data.json")
+        //val testdata = getJsonData("data.json")
 
-        binding.recyclerview.apply {
+        binding.btn.setOnClickListener {
+            if (binding.layoutExpand1.visibility == View.VISIBLE) {
+                binding.layoutExpand1.visibility = View.GONE
+                binding.imgMore1.animate().setDuration(200).rotation(180f)
+            } else {
+                binding.layoutExpand1.visibility = View.VISIBLE
+                binding.imgMore1.animate().setDuration(200).rotation(0f)
+            }
+        }
+
+        /*binding.recyclerview.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             adapter = MyRecyclerViewAdapter(testdata!!)
             addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-        }
+        }*/
 
     }
 
