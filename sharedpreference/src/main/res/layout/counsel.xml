@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/counsel">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● 교과목이수"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:text="꿈미래개척 교과목 4학기 이상 이수, 다만, 수의과대학 학생은 4개 학기중 본과에서 2개학기 이상 이수, 수의과대학 편입생은 2개 학기 이상 이수 의과대학 학생은 의예과 2회 및  의예과, 의학과 구분 없이 2회 실시(총 4회 실시)"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"/>
+
+        <CheckBox
+            android:id="@+id/cb6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+</LinearLayout>
